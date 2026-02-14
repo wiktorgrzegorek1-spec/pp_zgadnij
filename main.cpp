@@ -1,10 +1,10 @@
-#include <iostream>
-#include <vector>
-#include <string>
-#include <fstream>
-#include <algorithm>
-#include <ctime>
-#include <cstdlib>
+#include <iostream> //input/output stream (pozwala komunikowac sie z uzytkownikiem)
+#include <vector> //działa jak tablica, w trakcie działania programu może się dynamicznie powiększać lub pomniejszać
+#include <string> //pozwala korzystać z typu string, który jest wygodniejszy do pracy z tekstem niż tradycyjne tablice znaków
+#include <fstream> //umożliwia pracę z plikami (czytanie i zapisywanie danych)
+#include <algorithm> //zawiera funkcje do sortowania i innych operacji na kontenerach, takich jak wektory
+#include <ctime> //umożliwia korzystanie z funkcji związanych z czasem, takich jak generowanie losowych liczb na podstawie aktualnego czasu
+#include <cstdlib> //zawiera funkcje do generowania losowych liczb (rand) oraz do czyszczenia konsoli (system)
 
 using namespace std;
 
@@ -77,7 +77,7 @@ void showTop5() {
    cin.get();
 }
 
-// G��wna funkcja gry
+// G³ówna funkcja gry
 void playGame() {
    clearConsole();
    drawHeader("NOWA GRA");
@@ -92,7 +92,7 @@ void playGame() {
    if (choice == 1) { maxRange = 50; diffName = "Latwy"; }
    else if (choice == 3) { maxRange = 250; diffName = "Trudny"; }
 
-   // Tryb zak�adu
+   // Tryb zak³adu
    int betAttempts = 0;
    cout << "Czy chcesz sie zalozyc o liczbe prob? (t/n): ";
    char betChoice;
@@ -174,3 +174,4 @@ int main() {
 2;
    return 0;
 }
+
